@@ -1,4 +1,9 @@
+.text-lightblue{
+    color: #03dac6;
+}
+
 .card-over{
+    cursor: pointer;
     transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
@@ -7,5 +12,9 @@
 }
 
 .card-over:hover{
-    transform: scale(1.1);
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    -o-transform: scale(1.07);
 }

@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+// == Variables ==
+//Colors
+$bg-dark21: #212121;
+$bg-dark12: #121212;
+$lightblue: #03dac6;
+
+body{
+    background-color: $bg-dark21;
+}

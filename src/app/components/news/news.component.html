@@ -17,72 +17,24 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-12 mb-4">
-                <h3 class="text-center"><i class="bi bi-controller mr-1"></i>RetryStore News</h3>
+                <h2 class="text-center text-lightblue"><i class="bi bi-controller mr-1"></i>RetryStore News</h2>
             </div>
 
             <div class="col-12 mx-2">
 
-                <div class="row border rounded shadow-sm mb-4 mr-1">
-                    <div class="col-md-4 p-0  img-overlay">
-                        <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/ji/JIF2YEABIPJC1629926029519.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-md-8 py-2">
-                          <h5 class="card-title">¡COMIENZA LA TEMPORADA 2 DE SHADOWLANDS!</h5>
-                          <p class="card-text">El Mythic Dungeon International (MDI) vuelve para la segunda temporada de Shadowlands, y lo hace con un nuevo formato para que los equipos luchen por la final global de 2021.</p>
-                    </div>
-                </div>
-
-                <div class="row border rounded shadow-sm mb-4 mr-1">
-                    <div class="col-md-4 p-0  img-overlay">
-                        <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/ji/JIF2YEABIPJC1629926029519.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-md-8 py-2">
-                          <h5 class="card-title">MYTHIC DUNGEON INTERNATIONAL: ¡COMIENZA LA TEMPORADA 2 DE SHADOWLANDS!</h5>
-                          <p class="card-text">El Mythic Dungeon International (MDI) vuelve para la segunda temporada de Shadowlands, y lo hace con un nuevo formato para que los equipos luchen por la final global de 2021.</p>
-                    </div>
-                </div>
-
-                <div class="row border rounded shadow-sm mb-4 mr-1">
-                    <div class="col-md-4 p-0  img-overlay">
-                        <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/ji/JIF2YEABIPJC1629926029519.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-md-8 py-2">
-                          <h5 class="card-title">MYTHIC DUNGEON INTERNATIONAL: ¡COMIENZA LA TEMPORADA 2 DE SHADOWLANDS!</h5>
-                          <p class="card-text">El Mythic Dungeon International (MDI) vuelve para la segunda temporada de Shadowlands, y lo hace con un nuevo formato para que los equipos luchen por la final global de 2021.</p>
-                    </div>
-                </div>
-                
-                <div class="row border rounded shadow-sm mb-4 mr-1">
-                    <div class="col-md-4 p-0  img-overlay">
-                        <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/ji/JIF2YEABIPJC1629926029519.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-md-8 py-2">
-                          <h5 class="card-title">MYTHIC DUNGEON INTERNATIONAL: ¡COMIENZA LA TEMPORADA 2 DE SHADOWLANDS!</h5>
-                          <p class="card-text">El Mythic Dungeon International (MDI) vuelve para la segunda temporada de Shadowlands, y lo hace con un nuevo formato para que los equipos luchen por la final global de 2021.</p>
-                    </div>
-                </div>
-
-                <div class="row border rounded shadow-sm mb-4 mr-1">
-                    <div class="col-md-4 p-0  img-overlay">
-                        <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/ji/JIF2YEABIPJC1629926029519.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-md-8 py-2">
-                          <h5 class="card-title">MYTHIC DUNGEON INTERNATIONAL: ¡COMIENZA LA TEMPORADA 2 DE SHADOWLANDS!</h5>
-                          <p class="card-text">El Mythic Dungeon International (MDI) vuelve para la segunda temporada de Shadowlands, y lo hace con un nuevo formato para que los equipos luchen por la final global de 2021.</p>
-                    </div>
-                </div>
-
-                <div class="row border rounded shadow-sm mb-4 mr-1">
-                    <div class="col-md-4 p-0  img-overlay">
-                        <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/ji/JIF2YEABIPJC1629926029519.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-md-8 py-2">
-                          <h5 class="card-title">MYTHIC DUNGEON INTERNATIONAL: ¡COMIENZA LA TEMPORADA 2 DE SHADOWLANDS!</h5>
-                          <p class="card-text">El Mythic Dungeon International (MDI) vuelve para la segunda temporada de Shadowlands, y lo hace con un nuevo formato para que los equipos luchen por la final global de 2021.</p>
-                    </div>
-                </div>
-
-                
+                <ul class="pl-0" class="pl-0 news-list mt-4">
+                    <li *ngFor="let element of data">
+                        <div class="row rounded shadow mb-5 mr-1 bg-dark21 news-card">
+                            <div class="col-md-4 p-0 img-overlay">
+                                <img src="{{element.img}}" class="img-fluid">
+                            </div>
+                            <div class="col-md-8 py-2 d-flex flex-column justify-content-center">
+                                  <h5 class="card-title text-muted mb-1">{{element.title}}</h5>
+                                  <p class="card-text text-white">{{element.text}}</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

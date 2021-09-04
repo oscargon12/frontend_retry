@@ -1,7 +1,32 @@
-.card-img{
-    height: 140px;
+$bg-dark12: #121212;
 
-    img{
-        height: 140px;
-    }
+.news-list {
+  li {
+    list-style: none;
+  }
+}
+
+.text-lightblue{
+  color: #03dac6;
+}
+
+.bg-dark21{
+  background-color: $bg-dark12;
+}
+
+.news-card{
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+.news-card:hover{
+  transform: translate(15px, 0);
+  -webkit-transform: translate(15px, 0);
+  -moz-transform: translate(15px, 0);
+  -ms-transform: translate(15px, 0);
+  -o-transform: translate(15px, 0);
 }

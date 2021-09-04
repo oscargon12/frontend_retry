@@ -10,6 +10,7 @@ import { NewsComponent } from './components/news/news.component';
 import { SignComponent } from './components/sign/sign.component';
 import { Error404Component } from './components/error404/error404.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ApiComponent } from './components/api/api.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     NewsComponent,
     SignComponent,
     Error404Component,
-    FooterComponent
+    FooterComponent,
+    ApiComponent
   ],
   imports: [
     BrowserModule,
